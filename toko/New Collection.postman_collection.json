@@ -1,0 +1,326 @@
+{
+	"info": {
+		"_postman_id": "c8cd52b7-d151-4d6a-8092-6d0954e1659f",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nama\": \"baju batik \",\n    \"pajak\": [\n        {\n            \"namapajak\": \"pph\",\n            \"ratespajak\": 5\n        },\n        {\n            \"namapajak\": \"pajak\",\n            \"ratespajak\": 10\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/item",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"item"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/item",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nama\": \"baju kemeja\",\n    \"pajak\": [\n        {\n            \"namapajak\": \"pph\",\n            \"ratespajak\": 50\n        },\n        {\n            \"namapajak\": \"pajak\",\n            \"ratespajak\": 49\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/item",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"item"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 22 Nov 2021 00:23:50 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "113"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 1,\n        \"nama\": \"baju batik \",\n        \"pajak\": [\n            {\n                \"id\": 1,\n                \"nama\": \"pph\",\n                \"rate\": 5\n            },\n            {\n                \"id\": 2,\n                \"nama\": \"pajak\",\n                \"rate\": 10\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/item",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/item",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"item"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/item",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/item",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"item"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 22 Nov 2021 00:28:22 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "222"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"nama\": \"baju batik \",\n            \"pajak\": [\n                {\n                    \"id\": 1,\n                    \"nama\": \"pph\",\n                    \"rate\": 5\n                },\n                {\n                    \"id\": 2,\n                    \"nama\": \"pajak\",\n                    \"rate\": 10\n                }\n            ]\n        },\n        {\n            \"id\": 2,\n            \"nama\": \"baju kemeja \",\n            \"pajak\": [\n                {\n                    \"id\": 3,\n                    \"nama\": \"pph\",\n                    \"rate\": 52\n                },\n                {\n                    \"id\": 4,\n                    \"nama\": \"pajak\",\n                    \"rate\": 17\n                }\n            ]\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/item/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/item/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"item",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/item/2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/item/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"item",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 22 Nov 2021 00:29:14 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "115"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 2,\n        \"nama\": \"baju kemeja \",\n        \"pajak\": [\n            {\n                \"id\": 3,\n                \"nama\": \"pph\",\n                \"rate\": 52\n            },\n            {\n                \"id\": 4,\n                \"nama\": \"pajak\",\n                \"rate\": 17\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/item/1",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nama\": \"baju jas\",\n    \"pajak\": [\n        {\n            \"namapajak\": \"pph\",\n            \"ratespajak\": 86\n        },\n        {\n            \"namapajak\": \"pajak\",\n            \"ratespajak\": 86\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/item/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"item",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/item/1",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nama\": \"baju jas\",\n    \"pajak\": [\n        {\n            \"namapajak\": \"pph\",\n            \"ratespajak\": 86\n        },\n        {\n            \"namapajak\": \"pajak\",\n            \"ratespajak\": 86\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/item/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"item",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 22 Nov 2021 00:31:35 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "111"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 1,\n        \"nama\": \"baju jas\",\n        \"pajak\": [\n            {\n                \"id\": 1,\n                \"nama\": \"pph\",\n                \"rate\": 86\n            },\n            {\n                \"id\": 2,\n                \"nama\": \"pajak\",\n                \"rate\": 86\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/item/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/item/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"item",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/item/1",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/item/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"item",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 22 Nov 2021 00:33:33 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "13"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": true\n}"
+				}
+			]
+		}
+	]
+}
